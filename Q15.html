@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+    <div class="alert alert-success">Q15. of Nishant-17 <br> In the script section It have a function which takes two objects and return the person with more power. </div>
+    <div class="container mt-4">
+        <div class="input-group">
+            <span class="input-group-text">Name and Power</span>
+            <input type="text" aria-label="Name" class="form-control" onchange= "handle()" id="i1">
+            <input type="text" aria-label="Age" class="form-control" onchange= "handle()" id = "i2">
+            
+          </div>
+          <div class="input-group">
+          <span class="input-group-text">Name and Power</span>
+          <input type="text" aria-label="Name" class="form-control" onchange= "handle()" id="i3">
+          <input type="text" aria-label="Age" class="form-control" onchange= "handle()" id = "i4">
+        </div>
+
+        <hr>
+<button onclick="funky()" class="btn btn-danger mt-4">PowerFul People</button>
+          </div>
+
+          <div class="alert alert-success">
+            <p1 id="value"></p1>
+          </div>
+
+
+
+
+
+<script>
+var n1,n2,n3,n4;
+ function handle()
+ {
+     n1 = document.getElementById("i1").value;
+     n2 = document.getElementById("i2").value;
+     n3 = document.getElementById("i3").value;
+     n4 = document.getElementById("i4").value;
+    
+ }
+
+
+   
+    
+function fun()
+{
+    const obj1 = {name:n1, power:n2}
+    const obj2 = {name: n3, power:n4}
+    console.log(obj1);
+
+
+    var person1 =  obj1.name.length*35 +  parseInt(obj1.power);
+    var person2 =  obj2.name.length*35 + parseInt(obj2.power);
+
+       console.log(person1);
+       console.log(person2);
+
+     if(person1>person2)
+     {
+        return obj1.name;
+     }
+     else{
+        return obj2.name;
+     }
+     
+}
+
+function funky()
+{
+
+var x = fun();
+document.getElementById("value").innerHTML = x;
+}
+
+</script>
+
+</body>
+</html>

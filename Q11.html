@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+    <div class="alert alert-info"><p1 id="alert"></p1></div>
+    <div class="container">Press Enter to verify password and Enable submit button  </div>
+    <div class="container mt-4">
+        <div class="input-group">
+            <span class="input-group-text">Password</span>
+            <input type="password" aria-label="First name" class="form-control" onchange= "handle()" id="val1" >
+            <hr>
+            <button class="btn btn-success" disabled id = "val" onclick="change()">Submit</button>
+    
+          </div>
+
+
+
+<script>
+    var x= "";
+function handle()
+{
+     x = document.getElementById("val1").value;
+     change();
+
+}
+function change()
+{
+      if(x.length<10)
+      {
+        document.getElementById("alert").innerHTML = "😁 Sorry ! but anyone hack you minimum size is 10";
+        document.getElementById("val").disabled = true;
+        document.querySelector("#alert").style.fontSize = "20px";
+        document.querySelector("#alert").style.color = "red";
+      }
+      else{
+        document.getElementById("alert").innerHTML = "💪💪 Yayy !! You are secured";
+        document.querySelector("#alert").style.fontSize = "20px";
+        document.querySelector("#alert").style.color = "black";
+        document.getElementById("val").disabled = false;
+      }
+}
+</script>
+</body>
+</html>

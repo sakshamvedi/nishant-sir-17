@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+
+<div class="alert  alert-success">Q.3 of Nishant-17</div>
+
+
+
+<div class="container mt-4">
+    <div class="input-group">
+        <span class="input-group-text">Enter your Good Name 😁</span>
+        <input type="text" aria-label="First name" class="form-control" onchange= "handle()" id="val1">
+        <hr>
+        <button class="btn btn-success" onclick="change()">h1/h2/h3</button>
+
+      </div>
+<hr>
+<div class="container mt-4">
+<p id="para"></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  var x;
+  var count = 0;
+function handle()
+{
+   x = document.getElementById("val1").value;
+   document.getElementById("para").innerHTML = x;
+}
+
+function change()
+{ 
+    if(count==0)
+    {
+        document.querySelector("#para").style.fontSize = "32px";
+        count =1;
+    }
+    else if(count==1)
+    {
+        document.querySelector("#para").style.fontSize = "26px";
+        count = 2;
+    }
+    else{
+        document.querySelector("#para").style.fontSize = "20px";
+        count = 0;
+    }
+}
+
+
+
+
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

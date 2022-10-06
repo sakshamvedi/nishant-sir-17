@@ -29,9 +29,11 @@
 <script>
     
     var val1;
+    var x;
 
 function handle()
 {
+  x = 16;
   val1  =  document.querySelector("#val1").value;
   document.getElementById("val").innerHTML = val1;
 }
@@ -39,9 +41,21 @@ function handle()
 function add()
 {
    
-    var x = document.getElementById("val").style.fontSize;
-              var font = parseInt(x);
-document.getElementById("val").style.fontSize = (font+2)+'px';
+   
+            
+        x=x+2;
+            var font = parseInt(x);
+              console.log(font);
+document.getElementById("val").style.fontSize = (font)+'px';
+}
+
+function sub()
+{
+  x=x-2;
+            var font = parseInt(x);
+              console.log(font);
+document.getElementById("val").style.fontSize = (font)+'px';
+
 }
 
 

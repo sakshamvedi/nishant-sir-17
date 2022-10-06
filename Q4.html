@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+<div class="alert alert-danger">Q-4 of NISHANT-17</div>
+    <div class="container mt-4">
+        <div class="input-group">
+            <span class="input-group-text">Enter your Fav Place 😁</span>
+            <input type="text" aria-label="First name" class="form-control" onchange= "handle()" id="val1">
+            <hr>
+            <button class="btn btn-danger" onclick="red()">Red</button>
+            <button class="btn btn-info" onclick="blue()">Blue</button>
+            <button class="btn btn-success" onclick="green()">Green</button>
+          </div>
+
+    </div>
+
+<p1 class="card card-danger"> Mine is 😅</p1>
+<h1 id="place"></h1>
+
+
+<script>
+    var x = "";
+function handle()
+{
+   x=document.getElementById("val1").value;
+    document.getElementById("place").innerHTML = x;
+    
+}
+
+function red()
+{
+    document.querySelector("#place").style.color = "red";
+}
+function blue()
+{
+    document.querySelector("#place").style.color = "blue";
+}
+function green()
+{
+    document.querySelector("#place").style.color = "green";
+}
+
+
+</script>
+</body>
+</html>

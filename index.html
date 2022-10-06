@@ -6,11 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  display: block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #333;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -100%;
+  background-color: tomato;
+  transition: 0.5s;
+}
+
+a:hover:before {
+  animation: line 0.5s linear forwards;
+}
+
+@keyframes line {
+  0% {
+    left: -100%;
+    height: 4px;
+  }
+  50% {
+    left: 0;
+    height: 4px;
+  }
+   100% {
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+a:hover {
+  color: white;
+}
+
+
+</style>
 <body>
-    <input type="text" placeholder="Type " id="inputId"  onchange="handle()">
-    <button onclick="func()">Click</button>
-    <button onclick="sum()">Sum</button>
-    <p1 id="val">0</p1>
-    <script src="index.js"></script>
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="background-color: orange;">Nishant-17 : 17 Home-Work Question of Java-Script</a>
+       
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="Q1.html">Ques 1 </a>
+              <a class="nav-link" href="Q2.html">Ques 2 </a>
+              <a class="nav-link" href="Q3.html">Ques 3 </a>
+              <a class="nav-link " href="Q4.html">Ques 4 </a>
+              <a class="nav-link active" aria-current="page" href="https://q-15-of-nishant-17.netlify.app/">Ques 5 </a>
+              <a class="nav-link" href="Q6.html">Ques 6 </a>
+              <a class="nav-link" href="Q10.html">Ques 10 </a>
+              <a class="nav-link " href="Q11.html">Ques 11 </a>
+              <a class="nav-link " href="Q12.html">Ques 12 </a>
+              <a class="nav-link " href="Q14.html">Ques 14 </a>
+              <a class="nav-link " href="Q15.html">Ques 15 </a>
+            </div>
+          </div>
+        </div>
+      </nav>
 </body>
 </html>
