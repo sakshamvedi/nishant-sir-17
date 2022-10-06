@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-info">Q2 of Nishant-17</div>
+    <div class="container mt-4">
+        <button onclick="sub()" class="btn btn-success">-</button>
+        <div class="input-group">
+            <span class="input-group-text">Text Here 😅</span>
+            <input type="text" aria-label="First name" class="form-control" onchange= "handle()" id="val1">
+          
+          </div>
+ 
+  <button onclick="add()" class="btn btn-primary">+</button>
+
+  <hr>
+  <h1>Result : </h1>
+<h3 id="val">😁😁😁</h3>
+</div>
+
+
+<script>
+    
+    var val1;
+
+function handle()
+{
+  val1  =  document.querySelector("#val1").value;
+  document.getElementById("val").innerHTML = val1;
+}
+
+function add()
+{
+   
+    var x = document.getElementById("val").style.fontSize;
+              var font = parseInt(x);
+document.getElementById("val").style.fontSize = (font+2)+'px';
+}
+
+
+
+</script>
+
+
+</body>
+</html>
